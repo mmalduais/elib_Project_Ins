@@ -591,7 +591,7 @@
 <!-- Multi Column with Form Separator -->
 <div class="card mb-4">
   <h5 class="card-header">اضافة مؤلف </h5>
-  <form class="card-body" action="/save_user" method="POST">
+  <form class="card-body" action="/save_auther" method="POST">
    
     <div class="row g-3">
       <div class="col-md-6">
@@ -623,7 +623,7 @@
       </div>
 
   
-      <div class="col-md-6">
+      <!-- <div class="col-md-6">
         <div class="form-password-toggle">
           <label class="form-label" for="multicol-confirm-password">Auther activation</label>
           <div class="input-group input-group-merge">
@@ -639,7 +639,7 @@
         </div>
       </div>
     </div>
-    
+     -->
     
     <div class="pt-4">
       <button type="submit" class="btn btn-primary me-sm-3 me-1">Submit</button>

@@ -2,7 +2,7 @@
 
 namespace coding\app\models;
 
-class AUthor extends Model{
+class author extends Model{
     function __construct()
     {
 

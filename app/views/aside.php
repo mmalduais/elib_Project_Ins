@@ -112,10 +112,12 @@
 <li class="menu-item">
 <a href="add_auther" class="menu-link">
   <div>انشاء مؤلف</div>
+
+
 </a>
 </li>
 <li class="menu-item">
-<a href="#" class="menu-link">
+<a href="/auther" class="menu-link">
   <div>عرض المؤلفين</div>
 </a>
 </li>
