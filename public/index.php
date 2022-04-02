@@ -4,11 +4,13 @@ require_once __DIR__ . '/../vendor/autoload.php';
 use coding\app\controllers\authorsController;
 use coding\app\controllers\publisherController;
 use coding\app\controllers\CategoriesController;
+use coding\app\controllers\citiesController;
 use coding\app\controllers\booksController;
 use coding\app\system\AppSystem;
 use coding\app\system\Router;
 use coding\app\controllers\userrController;
 use Dotenv\Dotenv;
+
 
 $dotenv = Dotenv::createImmutable(dirname(__DIR__));//createImmutable(__DIR__);
 $dotenv->load();
@@ -114,6 +116,17 @@ Router::get('/edit_userr/{id}',[userrController::class,'edit']);
 Router::get('/remove_userr',[userrController::class,'remove']);
 Router::post('/save_userr',[userrController::class,'store']);
 Router::post('/update_userr',[userrController::class,'update']);
+
+/** end of web routes */
+/** web routes  cities */
+
+
+Router::get('/cities',[citiesController::class,'listAll']);
+Router::get('/add_cities',[citiesController::class,'create']);
+Router::get('/edit_cities/{id}',[citiesController::class,'edit']);
+Router::get('/remove_cities',[citiesController::class,'remove']);
+Router::post('/save_cities',[citiesController::class,'store']);
+Router::post('/update_cities',[citiesController::class,'update']);
 
 /** end of web routes */
 

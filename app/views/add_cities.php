@@ -591,7 +591,7 @@
 <!-- Multi Column with Form Separator -->
 <div class="card mb-4">
   <h5 class="card-header">اضافة مدينة</h5>
-  <form class="card-body" action="/save_user" method="POST">
+  <form class="card-body" action="/save_cities" method="POST">
   
     <div class="row g-3">
       <div class="col-md-6">

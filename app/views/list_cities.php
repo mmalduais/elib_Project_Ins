@@ -590,28 +590,22 @@
       <table class="table table-bordered">
         <thead>
           <tr>
-            <th>اسم المستخدم</th>
-            <th>الايمل </th>
-            <th>الباسورد</th>
-    
-            <th> الحالة</th>
-          
-            
+            <th>اسم المدينه</th>
+            <th>الحاله</th>
+       
             <th>العمليات</th>
           </tr>
         </thead>
         <tbody>
        
          
-         <?php foreach($params as $userr){?>
+         <?php foreach($params as $cities){?>
           <tr>
             
-            <td><?= $userr['name'];?></td>
-            <td><?= $userr['email'];?></td>
-            <td><?= $userr['password'];?></td>
-         
+            <td><?= $cities['name'];?></td>
+          
             <td>
-            <?php if($userr['is_active']==1) {?>    
+            <?php if($cities['is_active']==1) {?>    
             <span class="badge bg-label-success me-1">مفعل</span>
             <?php }
             else {?>
@@ -619,12 +613,7 @@
             <?php } ?>
             </td>
             <td>
-     
-           
-           
-          
-            <td>
-            <a href="/edit_userr/<?php echo $userr['id'];?>" class="btn btn-icon btn-outline-dribbble">
+            <a href="/edit_cities/<?php echo $cities['id'];?>" class="btn btn-icon btn-outline-dribbble">
                 <i class="tf-icons bx bx-edit-alt me-1"></i>
               </a>
               <button type="button" class="btn btn-icon btn-outline-dribbble">

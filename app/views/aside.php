@@ -96,7 +96,7 @@
 <!-- Misc -->
   <li class="menu-header small text-uppercase"><span class="menu-header-text">ادارة الاقسام والتصنيفات</span></li>
   <li class="menu-item">
-  <a href="/new_category" class="menu-link">
+  <a href="/add_category" class="menu-link">
     <div>انشاء قسم</div>
   </a>
 </li>
@@ -161,18 +161,7 @@
 </li>
  
    <!-- Misc -->
-   <li class="menu-header small text-uppercase"><span class="menu-header-text">ادارة طرق الدفع</span></li>
-   <li class="menu-item">
-  <a href="#" class="menu-link">
-    <div>اضافة طريقة </div>
-  </a>
-</li>
-<li class="menu-item">
-  <a href="#" class="menu-link">
-    <div>عرض الطرق</div>
-  </a>
-</li>
-
+ 
 
    <!-- Misc -->
    <li class="menu-header small text-uppercase"><span class="menu-header-text">ادارة  الدفع</span></li>
@@ -194,7 +183,7 @@
   </a>
 </li>
 <li class="menu-item">
-  <a href="#" class="menu-link">
+  <a href="/cities" class="menu-link">
     <div>عرض المدينه</div>
   </a>
 </li>
