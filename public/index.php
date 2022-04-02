@@ -2,7 +2,7 @@
 require_once __DIR__ . '/../vendor/autoload.php';
 
 use coding\app\controllers\authorsController;
-use coding\app\controllers\PublishersController;
+use coding\app\controllers\publisherController;
 use coding\app\controllers\CategoriesController;
 use coding\app\controllers\booksController;
 use coding\app\system\AppSystem;
@@ -90,6 +90,17 @@ Router::get('/edit_auther/{id}',[authorsController::class,'edit']);
 Router::get('/remove_auther',[authorsController::class,'remove']);
 Router::post('/save_auther',[authorsController::class,'store']);
 Router::post('/update_auther',[authorsController::class,'update']);
+
+/** end of web routes */
+/** web routes  auther */
+
+
+Router::get('/publisher',[publisherController::class,'listAll']);
+Router::get('/add_publisher',[publisherController::class,'create']);
+Router::get('/edit_publisher/{id}',[publisherController::class,'edit']);
+Router::get('/remove_publisher',[publisherController::class,'remove']);
+Router::post('/save_publisher',[publisherController::class,'store']);
+Router::post('/update_publisher',[publisherController::class,'update']);
 
 /** end of web routes */
 

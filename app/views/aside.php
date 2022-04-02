@@ -132,7 +132,7 @@
 </a>
 </li>
 <li class="menu-item">
-<a href="#" class="menu-link">
+<a href="/publisher" class="menu-link">
   <div>عرض الناشر</div>
 </a>
 </li>
