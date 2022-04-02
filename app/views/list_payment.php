@@ -590,15 +590,12 @@
       <table class="table table-bordered">
         <thead>
           <tr>
-            <th>اسم الناشر</th>
-            <th>الصورة </th>
-            <th>التلفون</th>
-            <th>التلفون الاخر</th>
-            <th>فاكس </th>
-            <th> الايميل</th>
-            <th> العنوان</th>
-            <th> الدولة</th>
+            <th>اسم طريقة الدفع</th>
+            <th>صورة طريقة الدفع </th>
+         
+    
             <th> الحالة</th>
+          
             
             <th>العمليات</th>
           </tr>
@@ -606,26 +603,30 @@
         <tbody>
        
          
-         <?php foreach($params as $auther){?>
+         <?php foreach($params as $payment){?>
           <tr>
             
-            <td><?= $auther['name'];?></td>
+            <td><?= $payment['name'];?></td>
             <td>
-              <img class="img-fluid rounded" height="150px" width="150px" src="images/<?= $auther['image'];?>">
+              <img class="img-fluid rounded" height="150px" width="150px" src="images/<?= $payment['image'];?>">
             </td>
-            <td><?= $auther['phone'];?></td>
-            <td><?= $auther['alt_phone'];?></td>
-            <td><?= $auther['fax'];?></td>
-            <td><?= $auther['email'];?></td>
           
-            <td><?= $auther['address'];?></td>
-            <td><?= $auther['country'];?></td>
-            <td><?= $auther['is_active'];?></td>
-            <td><?= $auther['bio'];?></td>
+         
+            <td>
+            <?php if($payment['is_active']==1) {?>    
+            <span class="badge bg-label-success me-1">مفعل</span>
+            <?php }
+            else {?>
+             <span class="badge bg-label-danger me-1">موقف</span>
+            <?php } ?>
+            </td>
+            <td>
+     
+           
            
           
             <td>
-            <a href="/edit_auther/<?php echo $auther['id'];?>" class="btn btn-icon btn-outline-dribbble">
+            <a href="/edit_payment/<?php echo $payment['id'];?>" class="btn btn-icon btn-outline-dribbble">
                 <i class="tf-icons bx bx-edit-alt me-1"></i>
               </a>
               <button type="button" class="btn btn-icon btn-outline-dribbble">

@@ -4,6 +4,7 @@ require_once __DIR__ . '/../vendor/autoload.php';
 use coding\app\controllers\authorsController;
 use coding\app\controllers\publisherController;
 use coding\app\controllers\CategoriesController;
+use coding\app\controllers\paymentController;
 use coding\app\controllers\citiesController;
 use coding\app\controllers\booksController;
 use coding\app\system\AppSystem;
@@ -129,6 +130,19 @@ Router::post('/save_cities',[citiesController::class,'store']);
 Router::post('/update_cities',[citiesController::class,'update']);
 
 /** end of web routes */
+
+/** web routes  Payment */
+
+
+Router::get('/payment',[paymentController::class,'listAll']);
+Router::get('/add_payment',[paymentController::class,'create']);
+Router::get('/edit_payment/{id}',[paymentController::class,'edit']);
+Router::get('/remove_payment',[paymentController::class,'remove']);
+Router::post('/save_payment',[paymentController::class,'store']);
+Router::post('/update_payment',[paymentController::class,'update']);
+
+/** end of web routes */
+
 
 
 $system->start();
