@@ -64,12 +64,12 @@
   <li class="menu-header small text-uppercase"><span class="menu-header-text">ادارة المستخدمين</span></li>
 
   <li class="menu-item">
-  <a href="new_user" class="menu-link">
+  <a href="add_userr" class="menu-link">
     <div>انشاء مستخدم</div>
   </a>
 </li>
 <li class="menu-item">
-  <a href="#" class="menu-link">
+  <a href="/userr" class="menu-link">
     <div>عرض المستخدمين</div>
   </a>
 </li>

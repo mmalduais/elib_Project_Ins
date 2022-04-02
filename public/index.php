@@ -7,7 +7,7 @@ use coding\app\controllers\CategoriesController;
 use coding\app\controllers\booksController;
 use coding\app\system\AppSystem;
 use coding\app\system\Router;
-use coding\app\controllers\UsersController;
+use coding\app\controllers\userrController;
 use Dotenv\Dotenv;
 
 $dotenv = Dotenv::createImmutable(dirname(__DIR__));//createImmutable(__DIR__);
@@ -101,6 +101,19 @@ Router::get('/edit_publisher/{id}',[publisherController::class,'edit']);
 Router::get('/remove_publisher',[publisherController::class,'remove']);
 Router::post('/save_publisher',[publisherController::class,'store']);
 Router::post('/update_publisher',[publisherController::class,'update']);
+
+/** end of web routes */
+
+
+/** web routes  Userr */
+
+
+Router::get('/userr',[userrController::class,'listAll']);
+Router::get('/add_userr',[userrController::class,'create']);
+Router::get('/edit_userr/{id}',[userrController::class,'edit']);
+Router::get('/remove_userr',[userrController::class,'remove']);
+Router::post('/save_userr',[userrController::class,'store']);
+Router::post('/update_userr',[userrController::class,'update']);
 
 /** end of web routes */
 
