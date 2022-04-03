@@ -13,6 +13,7 @@ class booksController extends Controller{
         $this->view('list_books',$allbooks);
 
     }
+    
     function create(){
         $this->view('add_book');
 

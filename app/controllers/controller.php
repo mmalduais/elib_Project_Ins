@@ -10,6 +10,14 @@ class Controller{
    function view($viewName,$params=[]){
        AppSystem::$appSystem->router->view($viewName,$params);
    }
+   function viewPages($viewName,$params=[]){
+       AppSystem::$appSystem->router->viewPages($viewName,$params);
+   }
+   
+//    function viewgategory($viewName,$params=[]){
+//     AppSystem::$appSystem->router->viewgategory($viewName,$params);
+// }
+
 
 }
 ?>

@@ -63,6 +63,11 @@ class Router{
         require_once __DIR__."/../views/$v.php";
 
     }
+    public function viewPages($v,$params){
+
+        require_once __DIR__."/../views/pages/$v.php";
+
+    }
  
 
 }

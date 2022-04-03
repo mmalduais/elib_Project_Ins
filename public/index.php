@@ -2,6 +2,7 @@
 require_once __DIR__ . '/../vendor/autoload.php';
 
 use coding\app\controllers\authorsController;
+use coding\app\controllers\homeController;
 use coding\app\controllers\publisherController;
 use coding\app\controllers\CategoriesController;
 use coding\app\controllers\paymentController;
@@ -32,7 +33,16 @@ Router::get('/books',function(){
   echo "books route path";
 });
 
+
+Router::get('/',[homeController::class,'home']);
+Router::get('/gategory',[homeController::class,'gategory']);
+
+Router::get('/details',[homeController::class,'details']);
+Router::get('/checkout',[homeController::class,'checkout']);
+Router::get('/paid',[homeController::class,'paid']);
 Router::get('/new_user',[UsersController::class,'register']);
+
+
 Router::get('/new_user',[UsersController::class,'adduser']);
 Router::get('/add_book',[UsersController::class,'addbook']);
 

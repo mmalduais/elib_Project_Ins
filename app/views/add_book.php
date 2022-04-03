@@ -597,11 +597,11 @@
 
     <div class="row g-3">
       <div class="col-md-6">
-        <label class="form-label" for="multicol-username">Title Book</label>
+        <label class="form-label" for="multicol-username"> عنوتن الكتاب</label>
         <input name="title" type="text" id="multicol-username" class="form-control" placeholder="Title.book" />
       </div>
       <div class="col-md-6">
-        <label class="form-label" for="multicol-email">Image For book</label>
+        <label class="form-label" for="multicol-email">  صورة الكتاب</label>
         <div class="input-group input-group-merge">
           <input  name="image"type="file" id="" class="form-control" placeholder="john.doe" aria-label="john.doe" aria-describedby="multicol-email2" />
           <span class="input-group-text" id="multicol-email2">image.book</span>
@@ -634,7 +634,7 @@
 
       <div class="col-md-6">
         <div class="form-password-toggle">
-          <label class="form-label" for="multicol-password">Price $</label>
+          <label class="form-label" for="multicol-password">السعر $</label>
           <div class="input-group input-group-merge">
             <input  name="price" type="number" id="" class="" />
             <span class="" id="multicol-password2"></span>
@@ -643,7 +643,7 @@
       </div>
       <div class="col-md-6">
         <div class="form-password-toggle">
-          <label class="form-label" for="multicol-confirm-password">Description</label>
+          <label class="form-label" for="multicol-confirm-password">الوصف</label>
           <div class="input-group input-group-merge">
           <label class="switch">
               <!-- <input name="description"  type="text"  /> -->
@@ -659,7 +659,7 @@
 
     <div class="col-md-6">
         <div class="form-password-toggle">
-          <label class="form-label" for="multicol-password">page_Number $</label>
+          <label class="form-label" for="multicol-password">عدد صفحات الكتاب $</label>
           <div class="input-group input-group-merge">
             <input  name="pages_number" type="number" id="" class="" />
             <span class="" id="multicol-password2"></span>
@@ -668,7 +668,7 @@
       </div>
       <div class="col-md-6">
         <div class="form-password-toggle">
-          <label class="form-label" for="multicol-password">Quantity_Page</label>
+          <label class="form-label" for="multicol-password">كمية الصفحات</label>
           <div class="input-group input-group-merge">
             <input  name="quantity" type="number" id="" class="" />
             <span class="" id="multicol-password2"></span>
